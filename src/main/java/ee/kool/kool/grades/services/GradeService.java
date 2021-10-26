@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-class GradesService
+public class GradeService
 {
     // GET METHODS
     public List<Student> getStudents()
@@ -116,3 +116,4 @@ class GradesService
     }
 
 }
+
