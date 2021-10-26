@@ -44,28 +44,11 @@ public class GradeService
         return student1;
     }
 
-    public List<Grade> getGrades()
-    {
-        List<Grade> grades = new ArrayList<>();
-
-        Student student1 = new Student(1, "Marco Kangur");
-        Grade grade1 = new Grade(1, 1, "Mathematics", 2);
-        Grade grade2 = new Grade(2, 2, "Chemistry", 3);
-
-        grade1.setStudent(student1);
-        grade2.setStudent(student1);
-
-        grades.add(grade1);
-        grades.add(grade2);
-        student1.setGrades(grades);
-        return grades;
-    }
-
     public List<Grade> getGradesFilter(String studentName, String subject)
     {
         List<Grade> grades = new ArrayList<>();
 
-        Student student1 = new Student(1, "Marco Kangur");
+        Student student1 = new Student(1, "Marco Kangur"); // studentName
         Grade grade1 = new Grade(1, 2, subject, 4);
 
         grade1.setStudent(student1);
@@ -75,8 +58,19 @@ public class GradeService
         return grades;
     }
 
+    // POST METHODS
+    public Student postStudent(Student newStudent)
+    {
+        return newStudent;
+    }
+
+    public Grade postGrade(Grade newGrade)
+    {
+        return newGrade;
+    }
+
     // PUT METHODS
-    public Student putStudent(int id, Student newStudent)
+    public Student updateStudent(int id, Student newStudent)
     {
 
         List<Grade> grades = new ArrayList<>();
@@ -92,7 +86,7 @@ public class GradeService
         return student1;
     }
 
-    public Grade putGrade(int id, Grade newGrade)
+    public Grade updateGrade(int id, Grade newGrade)
     {
         Student student1 = new Student(1, "Marco Kangur");
         Grade grade1 = new Grade(id, 2, "Mathematics", 5);
@@ -104,16 +98,5 @@ public class GradeService
 
         return grade1;
     }
-
-    public Student postStudent(Student newStudent)
-    {
-        return newStudent;
-    }
-
-    public Grade postGrade(Grade newGrade)
-    {
-        return newGrade;
-    }
-
 }
 
