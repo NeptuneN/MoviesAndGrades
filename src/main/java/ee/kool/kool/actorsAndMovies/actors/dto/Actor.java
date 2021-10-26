@@ -1,6 +1,6 @@
-package ee.kool.kool.actors.dto;
+package ee.kool.kool.actorsAndMovies.actors.dto;
 
-import ee.kool.kool.movies.dto.Film;
+import ee.kool.kool.actorsAndMovies.actors.movies.dto.Film;
 import lombok.Data;
 
 import java.util.List;

@@ -1,7 +1,7 @@
-package ee.kool.kool.actors.controller;
+package ee.kool.kool.actorsAndMovies.actors.controller;
 
-import ee.kool.kool.actors.dto.Actor;
-import ee.kool.kool.actors.service.ActorService;
+import ee.kool.kool.actorsAndMovies.actors.dto.Actor;
+import ee.kool.kool.actorsAndMovies.actors.service.ActorService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

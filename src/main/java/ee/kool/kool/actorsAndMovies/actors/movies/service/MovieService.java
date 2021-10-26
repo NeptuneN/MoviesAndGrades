@@ -1,7 +1,7 @@
-package ee.kool.kool.movies.service;
+package ee.kool.kool.actorsAndMovies.actors.movies.service;
 
-import ee.kool.kool.actors.dto.Actor;
-import ee.kool.kool.movies.dto.Film;
+import ee.kool.kool.actorsAndMovies.actors.dto.Actor;
+import ee.kool.kool.actorsAndMovies.actors.movies.dto.Film;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
